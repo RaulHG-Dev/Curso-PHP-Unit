@@ -21,4 +21,14 @@ class UserTest extends TestCase
         
         $this->assertEquals('', $user->getFullName());
     }
+    /**
+     * La etiqueta @test funciona para ejecutar código con funciones sin nombre test al principio
+     */
+    public function UserHasFirstName() {
+        $user = new User;
+
+        $user->first_name = "Teresa";
+
+        $this->assertEquals('Teresa', $user->getFullName());
+    }
 }
