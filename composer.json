@@ -1,0 +1,13 @@
+{
+    "name": "rhidalgog/curso-php-unit",
+    "description": "Proyecto Curso PHP Unit",
+    "authors": [
+        {
+            "name": "Raul Hidalgo",
+            "email": "r.hidalgo.dev@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    }
+}
