@@ -5,7 +5,6 @@ use PHPUnit\Framework\TestCase;
 class UserTest extends TestCase 
 {
     public function testReturnsFullName() {
-        require 'User.php';
 
         $user = new User();
 
@@ -22,9 +21,10 @@ class UserTest extends TestCase
         $this->assertEquals('', $user->getFullName());
     }
     /**
-     * La etiqueta @test funciona para ejecutar código con funciones sin nombre test al principio
+     * La etiqueta @ test funciona para ejecutar código con funciones sin nombre test al principio
+     * La etiqueta @ test será deprecada en versión 12
      */
-    public function UserHasFirstName() {
+    public function testUserHasFirstName() {
         $user = new User;
 
         $user->first_name = "Teresa";
